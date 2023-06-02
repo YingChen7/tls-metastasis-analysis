@@ -20,9 +20,9 @@ def connected_component_params_compute(seg_image_path, params_file_center_coord,
 
 
 
-tls_image_file = r''
-meta_image_file = r''
-params_path_out = r''
+tls_image_file = r'' # path of TLS mask image
+meta_image_file = r'' # path of metastasis mask image
+params_path_out = r'' # path to save results
 connected_component_params_compute(tls_image_file, params_path_out + 'tls_center_coord.npy', params_path_out + 'tls_voxels.npy')
 connected_component_params_compute(meta_image_file, params_path_out + 'meta_center_coord.npy', params_path_out + 'meta_voxels.npy')
 
